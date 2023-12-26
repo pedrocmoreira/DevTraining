@@ -13,6 +13,8 @@ export class Course {
   description: string;
 
   @JoinTable() // apenas na entidade principal
-  @ManyToMany(() => Tag, tag => tag.courses)
+  @ManyToMany(() => Tag, tag => tag.courses, {
+    cascade: true, //Aqui estou falando que qualquer tipo de atualização, qualquer dado deve ser alterado
+  })
   tags: Tag[];
 }
