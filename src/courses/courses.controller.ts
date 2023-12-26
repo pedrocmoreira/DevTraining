@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, Patch, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, Post, Put } from '@nestjs/common';
 import { CoursesService } from './courses.service';
 
 @Controller('courses')
@@ -23,7 +23,7 @@ export class CoursesController {
 
   //Put para atualizar mais de uma informação Patch para atualizar apenas uma informação
 
-  @Patch()
+  @Put()
   update(@Param('id') id: number, @Body() body) {
     return this.courseService.update(+id, body);
   }
