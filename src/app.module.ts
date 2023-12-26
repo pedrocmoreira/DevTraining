@@ -9,5 +9,4 @@ import { DatabaseModule } from './database/database.module';
   controllers: [AppController],
   providers: [AppService],
 })
-/*eslint-disable */
 export class AppModule { }

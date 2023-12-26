@@ -5,7 +5,6 @@ import { UpdateCourseDTO } from './dto/update-course.dto';
 
 @Controller('courses')
 export class CoursesController {
-  /*eslint-disable*/
   constructor(private readonly courseService: CoursesService) { }
   @Get()
   findAll() {
