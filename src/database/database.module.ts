@@ -13,7 +13,7 @@ export const dataSourceOptions: DataSourceOptions = {
   password: 'docker',
   database: 'devtraining',
   entities: [Course, Tag],
-  synchronize: true, // pega as informações da entidade e já cria diretamente no banco de dados
+  // synchronize: true, // pega as informações da entidade e já cria diretamente no banco de dados
 };
 
 @Module({
