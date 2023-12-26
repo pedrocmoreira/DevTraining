@@ -25,5 +25,4 @@ export const dataSourceOptions: DataSourceOptions = {
     }),
   ],
 })
-/*eslint-disable*/
 export class DatabaseModule { }

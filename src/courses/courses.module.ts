@@ -9,5 +9,4 @@ import { Course } from './entities/courses.entity';
   controllers: [CoursesController],
   providers: [CoursesService],
 })
-/*eslint-disable */
 export class CoursesModule { }
