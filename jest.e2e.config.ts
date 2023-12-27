@@ -5,7 +5,7 @@ export default {
     'ˆ*\\.(t|j)s$': 'ts-jest',
   },
   collectCoverageFrom: ['**/*.(t|j)s'],
-  coverageDiretory: '.../coverage',
-  testEnviroment: 'node',
+  coverageDirectory: '.../coverage',
+  testEnvironment: 'node',
 
 }
